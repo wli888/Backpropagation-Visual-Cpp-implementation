@@ -1,0 +1,4 @@
+// Microsoft Developer Studio generated Help ID include file.
+// Used by bnn.rc
+//
+#define HIDC_EDIT_NO_LAYERS             0x808103f0    // IDD_NEW_DIALOG

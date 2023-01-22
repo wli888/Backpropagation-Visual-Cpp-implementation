@@ -1,0 +1,510 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About bnn"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "bnn Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_BNN_DIALOG DIALOGEX 0, 0, 136, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Backpropagation Neural Network"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "New",IDC_NN_NEW,43,14,50,14
+    PUSHBUTTON      "Load",IDC_NN_LOAD,43,36,50,14
+    PUSHBUTTON      "Save",IDC_NN_SAVE,43,55,50,14
+    PUSHBUTTON      "Train",ID_NN_TRAIN,43,79,50,14
+    PUSHBUTTON      "Test",IDC_NN_TEST,43,102,50,14
+    PUSHBUTTON      "Randomize",IDC_NN_RANDOMIZE,43,125,50,14
+    PUSHBUTTON      "Exit",IDC_EXIT,43,164,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "bnn MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "bnn\0"
+            VALUE "LegalCopyright", "Copyright (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "bnn.EXE\0"
+            VALUE "ProductName", "bnn Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_BNN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 129
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Dutch (Netherlands) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_NEW_DIALOG DIALOGEX 0, 0, 191, 160
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Create New Neural Network"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,28,135,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,135,50,14
+    LTEXT           "Number of layers:",IDC_NO_LAYERS,17,14,54,8
+    EDITTEXT        IDC_EDIT_NO_LAYERS,78,13,40,14,ES_AUTOHSCROLL,0,
+                    HIDC_EDIT_NO_LAYERS
+    PUSHBUTTON      "Update ",IDC_BUTTON_NO_LAYERS_UPDATE,130,13,50,14
+    PUSHBUTTON      "Update",IDC_BUTTON_NO_NEUR_UPDATE,130,36,50,14
+    LISTBOX         IDC_LIST_NEUR_PER_LAYER,75,59,48,40,LBS_NOINTEGRALHEIGHT | 
+                    LBS_WANTKEYBOARDINPUT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_NO_NEUR,78,36,40,14,ES_AUTOHSCROLL
+    CONTROL         "With bias",IDC_CHECK_WITH_BIAS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,75,108,44,10
+END
+
+IDD_LOAD_DIALOG DIALOG DISCARDABLE  0, 0, 320, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,263,24,50,14
+END
+
+IDD_TRAIN_DIALOG DIALOG DISCARDABLE  0, 0, 302, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Train Neural Network"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Train",ID_TRAIN,76,166,31,14
+    PUSHBUTTON      "Cancel",IDCANCEL,191,166,31,14
+    GROUPBOX        "Training parameters",IDC_STATIC,7,86,155,61
+    EDITTEXT        IDC_EDIT_TNN_PAR_FILENAME,17,121,137,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Training parameters screen",IDC_BUTTON_TNN_PAR_SCREEN,
+                    17,102,88,14
+    GROUPBOX        "Training patterns",IDC_STATIC,7,15,155,59
+    EDITTEXT        IDC_EDIT_TNN_PAT_FILENAME,18,50,137,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Training patterns screen",IDC_BUTTON_TNN_TRAIN_PAT,18,
+                    31,77,14
+END
+
+IDD_BNN_TEST_DIALOG DIALOG DISCARDABLE  0, 0, 267, 294
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Test",ID_TEST,48,265,50,14
+    PUSHBUTTON      "Exit",IDCANCEL,171,265,50,14
+    LTEXT           "Test patterns filename:",IDC_STATIC_TEST_PAT_FILENAME,
+                    13,27,69,8
+    EDITTEXT        IDC_EDIT_TEST_PAT_FILENAME,85,25,161,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Load from file",IDC_BUTTON_TEST_PAT_LOAD,48,47,50,14
+    PUSHBUTTON      "Save to file",IDC_BUTTON_TEST_PAT_SAVE,159,47,50,14
+    GROUPBOX        "Test patterns archive",IDC_STATIC_TEST_PAT_ARCHIVE,7,13,
+                    253,56
+    LTEXT           "Number of test patterns:",IDC_STATIC_NO_TEST_PAT,38,88,
+                    71,8
+    LTEXT           "Number of input values",IDC_STATIC_TEST_PAT_NO_INVAL,38,
+                    108,69,8
+    EDITTEXT        IDC_EDIT_NO_TEST_PAT,126,85,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TEST_PAT_NO_INVAL,126,105,40,14,ES_AUTOHSCROLL
+    LTEXT           "Test pattern number:",IDC_STATIC_TEST_PAT_NUM,38,133,62,
+                    8
+    LISTBOX         IDC_LIST_TEST_PAT_NUM,38,147,48,40,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Test pattern input",IDC_STATIC_TEST_PAT_IN,38,195,52,8
+    LISTBOX         IDC_LIST_TEST_PAT_IN,38,207,48,40,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Neural network output",IDC_STATIC,127,195,65,8
+    LISTBOX         IDC_LIST_NET_OUT,126,208,48,40,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Test patterns",IDC_STATIC_TEST_PAT,7,74,253,182
+END
+
+IDD_DIALOG_TRAIN_PAT DIALOG DISCARDABLE  0, 0, 258, 325
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Training patterns"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,47,296,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,296,50,14
+    LTEXT           "Training patterns filename:",
+                    IDC_STATIC_TRAIN_PAT_FILENAME,13,23,80,8
+    EDITTEXT        IDC_EDIT_TRAIN_PAT_FILENAME,95,21,145,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Load from file",IDC_BUTTON_TRAIN_PAT_LOAD,42,47,50,14
+    PUSHBUTTON      "Save to file",IDC_BUTTON_TRAIN_PAT_SAVE,157,47,50,14
+    GROUPBOX        "Training patterns archive",IDC_STATIC_TRAIN_PAT_ARCHIVE,
+                    7,7,244,61
+    LTEXT           "Number of training patterns:",IDC_STATIC_NO_TRAIN_PAT,
+                    36,84,82,8
+    EDITTEXT        IDC_EDIT_NO_TRAIN_PAT,124,83,40,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST_TRAIN_PAT_NUM,37,161,48,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Training pattern number:",IDC_STATIC_TRAIN_PAT_NUM,37,
+                    148,73,8
+    LTEXT           "Training pattern input:",IDC_STATIC_TRAIN_PAT_IN,37,217,
+                    65,8
+    LISTBOX         IDC_LIST_TRAIN_PAT_IN,37,230,48,40,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Training pattern output:",IDC_STATIC_TRAIN_PAT_OUT,134,
+                    218,69,8
+    LISTBOX         IDC_LIST_TRAIN_PAT_OUT,133,231,48,40,
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Number of input values:",IDC_STATIC_TRAIN_PAT_NO_INVAL,
+                    36,104,71,8
+    EDITTEXT        IDC_EDIT_TRAIN_PAT_NO_INVAL,124,102,40,14,ES_AUTOHSCROLL
+    LTEXT           "Number of output values:",
+                    IDC_STATIC_TRAIN_PAT_NO_OUTVAL,36,124,75,8
+    EDITTEXT        IDC_EDIT_TRAIN_PAT_NO_OUTVAL,124,121,40,14,
+                    ES_AUTOHSCROLL
+    GROUPBOX        "Training patterns",IDC_STATIC_TRAIN_PATTERNS,7,71,244,
+                    210
+END
+
+IDD_ERROR_PLOT_DIALOG DIALOG DISCARDABLE  0, 0, 343, 181
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Error Plot"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BUTTON1,116,144,58,19
+END
+
+IDD_DIALOG_TRAIN_PAR DIALOG DISCARDABLE  0, 0, 330, 346
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Training parameters 1"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Advanced",ID_TRAIN_PAR1_LR_ADVANCED,258,206,50,14,
+                    WS_GROUP
+    PUSHBUTTON      "Cancel",ID_TRAIN_PAR1_CANCEL,185,312,50,14
+    LTEXT           "Training parameters filename:",
+                    IDC_STATIC_TRAIN_PAR1_FILENAME,13,28,90,8
+    EDITTEXT        IDC_EDIT_TRAIN_PAR_FILENAME,108,26,145,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    PUSHBUTTON      "Load from file",IDC_BUTTON_TRAIN_PAR_LOAD,42,52,50,14,
+                    WS_GROUP
+    PUSHBUTTON      "Save to file",IDC_BUTTON_TRAIN_PAR_SAVE,157,52,50,14,
+                    WS_GROUP
+    GROUPBOX        "Training parameters archive",
+                    IDC_STATIC_TRAIN_PAR1_ARCHIVE,7,13,255,61,WS_GROUP
+    GROUPBOX        "User given training parameters",IDC_STATIC,7,84,316,219
+    LTEXT           "Number of epoches:",IDC_STATIC,18,107,62,8,NOT WS_GROUP
+    LTEXT           "Desired error:",IDC_STATIC,18,130,42,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDIT_TNN_NO_EPOCHES,115,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TNN_DES_ERROR,115,128,40,14,ES_AUTOHSCROLL
+    LTEXT           "Value:",IDC_STATIC,166,208,20,8
+    EDITTEXT        IDC_EDIT_LR,191,206,40,14,ES_AUTOHSCROLL | WS_GROUP
+    DEFPUSHBUTTON   "OK",ID_TRAIN_PAR1_OK,94,313,50,14
+    LTEXT           "Method:",IDC_STATIC,20,209,25,8
+    COMBOBOX        IDC_COMBO_LR,52,206,90,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    DEFPUSHBUTTON   "More",ID_TRAIN_PAR1_MORE,144,281,50,14
+    GROUPBOX        "Learning rate",IDC_STATIC,13,193,304,35,WS_GROUP
+    DEFPUSHBUTTON   "Advanced",ID_TRAIN_PAR1_DISPLAY_ADVANCED,258,164,50,14,
+                    WS_GROUP
+    LTEXT           "Refresh every",IDC_STATIC,124,166,43,8
+    EDITTEXT        IDC_EDIT_DISPLAY,170,163,40,14,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "Method:",IDC_STATIC,20,167,25,8
+    COMBOBOX        IDC_COMBO_DISPLAY,52,164,58,45,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Display",IDC_STATIC,13,151,304,35,WS_GROUP
+    DEFPUSHBUTTON   "Advanced",ID_TRAIN_PAR1_MOMENTUM_ADVANCED,258,249,50,14,
+                    WS_GROUP
+    LTEXT           "Value:",IDC_STATIC,166,251,20,8
+    EDITTEXT        IDC_EDIT_MOMENTUM,191,249,40,14,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    LTEXT           "Method:",IDC_STATIC,20,252,25,8
+    COMBOBOX        IDC_COMBO_MOMENTUM,52,249,90,47,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    GROUPBOX        "Momentum",IDC_STATIC,13,236,304,35,WS_GROUP
+    LTEXT           "epoches",IDC_STATIC,214,166,28,8
+END
+
+IDD_TRAINING_DIALOG DIALOG DISCARDABLE  0, 0, 307, 253
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Training Neural Network"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Abort",ID_TRAINING_ABORT,71,221,50,14
+    PUSHBUTTON      "Exit",ID_TRAINING_EXIT,179,221,50,14
+    GROUPBOX        "Training parameters during training",IDC_STATIC,173,15,
+                    127,182
+    LTEXT           "Epoche number:",IDC_STATIC,187,65,50,8,NOT WS_GROUP
+    LTEXT           "Error:",IDC_STATIC,187,88,17,8,NOT WS_GROUP
+    LTEXT           "Lowest error:",IDC_STATIC,187,111,39,8,NOT WS_GROUP
+    LTEXT           "Learning rate:",IDC_STATIC,187,134,42,8,NOT WS_GROUP
+    LTEXT           "Momentum:",IDC_STATIC,187,157,36,8,NOT WS_GROUP
+    LTEXT           "Static",IDC_STATIC_TNN_EPOCHE_N,246,62,45,15,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC_TNN_ERROR,246,85,45,15,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC_TNN_LOWEST_ERROR,246,108,45,15,
+                    SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC_TNN_ACT_LR,246,131,45,15,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC_TNN_ACT_MOMENTUM,246,154,45,15,
+                    SS_SUNKEN
+    LTEXT           "MCUPS:",IDC_STATIC,187,39,27,8
+    LTEXT           "Static",IDC_STATIC_TNN_MCUPS,246,37,45,15,SS_SUNKEN
+    GROUPBOX        "User given training parameters",IDC_STATIC,7,15,155,182
+    LTEXT           "Number of epoches:",IDC_STATIC,18,64,62,8,NOT WS_GROUP
+    LTEXT           "Refresh after every X epoches:",IDC_STATIC,18,87,93,8,
+                    NOT WS_GROUP
+    LTEXT           "Desired error:",IDC_STATIC,18,110,42,8,NOT WS_GROUP
+    LTEXT           "Learning rate:",IDC_STATIC,18,133,42,8,NOT WS_GROUP
+    LTEXT           "Momentum:",IDC_STATIC,18,156,36,8,NOT WS_GROUP
+    LTEXT           "Static",IDC_STATIC_GIVEN_EPOCHE,114,62,45,15,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC_GIVEN_REFRESH,114,85,45,15,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC_GIVEN_ERROR,114,108,45,15,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC_LR,114,131,45,15,SS_SUNKEN
+    LTEXT           "Static",IDC_STATIC_MOMENTUM,114,153,45,15,SS_SUNKEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_NEW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+    END
+
+    IDD_LOAD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_TRAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_BNN_TEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 287
+    END
+
+    IDD_DIALOG_TRAIN_PAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 318
+    END
+
+    IDD_ERROR_PLOT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 337
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_TRAIN_PAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 323
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 339
+    END
+
+    IDD_TRAINING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 246
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\bnn.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\bnn.ico"
+#endif    // Dutch (Netherlands) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\bnn.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
